@@ -19,9 +19,9 @@ namespace ToDoList.Migrations
         {
             var taskItems = new List<TaskItem>
             {
-                new TaskItem { ScheduledTime =DateTime.Parse("2010-09-01"), Description = "Clean room", IsCompleted = false},
-                new TaskItem { ScheduledTime =DateTime.Parse("2010-09-01"), Description = "Study", IsCompleted = false},
-                new TaskItem { ScheduledTime =DateTime.Parse("2010-09-01"), Description = "Walk dog", IsCompleted = false}
+                new TaskItem { Description = "Clean room", IsCompleted = false},
+                new TaskItem { Description = "Study", IsCompleted = false},
+                new TaskItem { Description = "Walk dog", IsCompleted = false}
             };
 
             taskItems.ForEach(s => context.TaskItems.AddOrUpdate(t => t.TaskItemID, s));

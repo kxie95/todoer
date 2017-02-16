@@ -11,12 +11,8 @@ namespace ToDoList.Models
     {
         public int TaskItemID { get; set; }
         [Required]
-        [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Scheduled Time")]
-        public DateTime ScheduledTime { get; set; }
-        [Required]
         public string Description { get; set; }
+
         [HiddenInput(DisplayValue = false)]
         public bool IsCompleted { get; set; }
 

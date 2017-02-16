@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201702162018362_TaskItemUpdate.Designer.cs">
       <DependentUpon>201702162018362_TaskItemUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702162052036_RemoveDateTime.cs" />
+    <Compile Include="Migrations\201702162052036_RemoveDateTime.Designer.cs">
+      <DependentUpon>201702162052036_RemoveDateTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -300,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702162018362_TaskItemUpdate.resx">
       <DependentUpon>201702162018362_TaskItemUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702162052036_RemoveDateTime.resx">
+      <DependentUpon>201702162052036_RemoveDateTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
